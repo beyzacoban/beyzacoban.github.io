@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4d0016; /* Koyu kırmızı */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #4d0016; /* Header altına ince bir kırmızı çizgi */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0f2f1; /* Açık yeşil bağlantı rengi */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #f9f9f9;
+}
+
+h2, h3 {
+    color: #4d0016; /* Koyu kırmızı */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+    gap: 15px; /* Resimler arasındaki boşluk */
+}
+
+.side-image {
+    width: 200px; /* Resimlerin genişliği */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004d40;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #00796b; /* Footer üstüne ince bir yeşil çizgi */
+}
