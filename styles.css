@@ -7,12 +7,13 @@ body {
 }
 
 header {
-    background-color: #4d0016; /* Koyu kırmızı */
+    background-color: #4d0016;
     color: #fff;
     padding: 1.5rem;
     text-align: center;
-    border-bottom: 3px solid #4d0016; /* Header altına ince bir kırmızı çizgi */
+    border-bottom: 3px solid #4d0016;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -26,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0f2f1; /* Açık yeşil bağlantı rengi */
+    color: #e0f2f1;
     text-decoration: none;
     font-weight: bold;
 }
@@ -48,8 +49,9 @@ h1 {
     color: #f9f9f9;
 }
 
-h2, h3 {
-    color: #4d0016; /* Koyu kırmızı */
+h2,
+h3 {
+    color: #4d0016;
 }
 
 .image-container {
@@ -57,14 +59,14 @@ h2, h3 {
     justify-content: space-between;
     align-items: flex-start;
     padding: 2rem 0;
-    gap: 15px; /* Resimler arasındaki boşluk */
+    gap: 15px;
 }
 
 .side-image {
-    width: 200px; /* Resimlerin genişliği */
+    width: 200px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -77,5 +79,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-top: 3px solid #00796b; /* Footer üstüne ince bir yeşil çizgi */
+    border-top: 3px solid #00796b;
 }
