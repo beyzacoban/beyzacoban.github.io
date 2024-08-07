@@ -11,69 +11,137 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <style>
+    /* Optional custom styling */
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    .dark-mode {
+      background-color: #333;
+      color: #f8f9fa;
+    }
+    .dark-mode a {
+      color: #f8f9fa;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello, I am Beyza Coban. I am currently a second-year student pursuing a Bachelor's degree in Computer
-      Engineering at Marmara University and a graduate of the Game and Application Academy. I learned Java and C
-      programming languages during my first year at university. During the academy, I learned to develop
-      applications with Flutter and Dart, and I developed my first application during the graduation bootcamp. I
-      am currently continuing to enhance my skills in machine learning (artificial intelligence).</p>
-  </section>
-
-
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java</li>
-      <li>C</li>
-      <li>Flutter & Dart</li>
-      <li>Python</li>
-      <li>Machine Learning</li>
-    </ul>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>TeamHub</h3>
-      <p>TeamHub is a Flutter/Dart application that connects project owners and developers, enabling them to
-        easily find and collaborate on projects.</p>
-      <a href="https://github.com/beyzacoban/OUA-Bootcamp-39" target="_blank">View on GitHub</a>
+  <main class="container">
+    <div class="row align-items-center">
+      <!-- Left Column for Images -->
+      <div class="col-lg-2 col-md-3 mb-4">
+        <div class="text-center">
+          <img src="assets/img.jpeg" alt="Image" class="img-fluid mb-3">
+          <img src="assets/img2.jpeg" alt="Image" class="img-fluid mb-3">
+          <img src="assets/img3.jpeg" alt="Image" class="img-fluid">
+        </div>
+      </div>
+      <!-- Main Content Column -->
+      <div class="col-lg-8 col-md-6 mb-4">
+        <section id="about" class="my-5">
+          <h2>About Me</h2>
+          <p>Hello, I am Beyza Coban. I am currently a second-year student pursuing a Bachelor's degree in Computer
+            Engineering at Marmara University and a graduate of the Game and Application Academy. I learned Java and C
+            programming languages during my first year at university. During the academy, I learned to develop
+            applications with Flutter and Dart, and I developed my first application during the graduation bootcamp. I
+            am currently continuing to enhance my skills in machine learning (artificial intelligence).</p>
+        </section>
+        <section id="skills" class="my-5">
+          <h2>Skills</h2>
+          <ul>
+            <li>Java</li>
+            <li>C</li>
+            <li>Flutter & Dart</li>
+            <li>Python</li>
+            <li>Machine Learning</li>
+          </ul>
+        </section>
+        <section id="projects" class="my-5">
+          <h2>Projects</h2>
+          <div class="project">
+            <br>
+            <h4>TeamHub</h4>
+            <p>TeamHub is a Flutter/Dart application that connects project owners and developers, enabling them to
+              easily find and collaborate on projects.</p>
+            <a href="https://github.com/beyzacoban/OUA-Bootcamp-39" target="_blank" class="btn btn-primary ">View on
+              GitHub</a>
+            <br>
+          </div>
+          <div class="project">
+            <h4>RoadRush</h4>
+            <p>RoadRush is a traffic simulation game developed using JavaFx.</p>
+            <br>
+            <a href="https://github.com/beyzacoban/RoadRush" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </section>
+        <section id="contact" class="my-5">
+          <h2>Contact</h2>
+          <p>You can reach me at: <a href="mailto:beyzacoban07@gmail.com">beyzacoban07@gmail.com</a></p>
+          <p>Follow me on <a href="https://www.linkedin.com/in/beyzacoban/" target="_blank" class="btn btn-primary" >LinkedIn</a></p>
+        </section>
+      </div>
+      <!-- Right Column for Images -->
+      <div class="col-lg-2 col-md-3 mb-4">
+        <div class="text-center">
+          <img src="assets/img4.jpeg" alt="Image" class="img-fluid mb-3">
+          <img src="assets/img5.jpeg" alt="Image" class="img-fluid mb-3">
+          <img src="assets/img6.jpeg" alt="Image" class="img-fluid">
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <h3>RoadRush</h3>
-      <p>RoadRush is a traffic simulation game developed using JavaFx.</p>
-      <a href="https://github.com/beyzacoban/RoadRush" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+  </main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at: <a href="mailto:beyzacoban07@gmail.com">beyzacoban07@gmail.com</a></p>
-    <p>Follow me on <a href="https://www.linkedin.com/in/beyzacoban/" target="_blank">LinkedIn</a></p>
-  </section>
+  <footer>
+    <p>© 2024 Beyza Coban</p>
+  </footer>
 
-  <div class="image-container">
-    <img src="img.jpeg" alt="Left Image" class="side-image left">
-    <img src="img2.jpeg" alt="Left Image" class="side-image left">
-    <img src="img3.jpeg" alt="Right Image" class="side-image right">
-    <img src="img4.jpeg" alt="Right Image" class="side-image right">
+  <div class="btn-dark-mode">
+    <button class="btn btn-secondary" onclick="toggleDarkMode()">Dark Mode</button>
   </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.querySelector('header').classList.toggle('dark-mode');
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.toggle('dark-mode');
+      });
+      document.querySelector('footer').classList.toggle('dark-mode');
+      document.querySelectorAll('h2, h3').forEach(heading => {
+        heading.classList.toggle('dark-mode');
+      });
+    }
+  </script>
 </body>
 
 </html>

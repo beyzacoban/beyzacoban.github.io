@@ -1,83 +1,139 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-    background-color: #4d0016;
-    color: #fff;
-    padding: 1.5rem;
-    text-align: center;
-    border-bottom: 3px solid #4d0016;
+  background-color: #4d0016;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid #4d0016;
 }
 
-
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #e0f2f1;
-    text-decoration: none;
-    font-weight: bold;
+  color: #e0f2f1;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 h1 {
-    color: #f9f9f9;
+  color: #f9f9f9;
 }
 
 h2,
 h3 {
-    color: #4d0016;
+  color: #4d0016;
 }
 
 .image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2rem 0;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 0;
+  gap: 15px;
 }
 
 .side-image {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #004d40;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 3px solid #00796b;
+  text-align: center;
+  padding: 1rem;
+  background-color: #4d0016;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  border-top: 3px solid #4d0016;
 }
+
+.btn-success {
+  color: #004d40;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-bottom: 3px solid #333;
+}
+
+nav.dark-mode ul li a {
+  color: #bbbbbb;
+}
+
+section.dark-mode {
+  background-color: #333;
+  color: #ffffff;
+}
+
+h2.dark-mode,
+h3.dark-mode {
+  color: #e0e0e0;
+}
+
+footer.dark-mode {
+  background-color: #1f1f1f;
+  position: relative;
+  color: #ffffff;
+  border-top: 3px solid #444;
+}
+
+.btn-dark-mode {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+
+.dark-mode .navbar,
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  background-color: #1f1f1f;
+  color: #bbbbbb;
+}
+
+.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(187, 187, 187, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn btn-primary {
+  background-color:#1f1f1f
+}
+
