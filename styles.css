@@ -7,7 +7,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
 .navbar-light .navbar-brand,
 .navbar-light .nav-link {
   color: #000;
@@ -27,14 +26,16 @@ body {
 }
 
 .btn-pink {
-  background-color: #f875a6;
-  color: #fff;
+  background-color: #f875a6 !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 .btn-pink:hover {
-  background-color: #f875a6;
-  color: #fff;
+  background-color: #e1648f !important;
+  color: #fff !important;
 }
+
 
 .text-white {
   color: #003c6b;
