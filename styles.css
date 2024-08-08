@@ -7,6 +7,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
+
 .navbar-light .navbar-brand,
 .navbar-light .nav-link {
   color: #000;
@@ -67,7 +68,7 @@ html {
 
 
 }
-/* Ensure the container takes full width */
+
 .home-container {
   display: flex;
   justify-content: space-between;
@@ -76,10 +77,10 @@ html {
 }
 
 .home-container img {
-  max-width: 100%; /* Ensure the image is responsive */
+  max-width: 100%;
   height: auto;
 }
 
 .home-container h1 {
-  color: #fff; /* Ensure text color is white */
+  color: #fff;
 }
