@@ -2,187 +2,189 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beyza Coban - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyza Coban - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Beyza Coban</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('about')">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('read')">Read</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('watched')">Watched</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section id="home" class="my-5 text-center">
-      <img src="assets\gif.gif" alt="Engaging GIF" class="home-gif">
-    </section>
-
-    <section id="about" class="my-5 hidden">
-      <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <p class="lead text-center">Hello, I am Beyza Coban. I am currently a second-year student pursuing a Bachelor's
-          degree in Computer
-          Engineering at Marmara University and a graduate of the Game and Application Academy. I learned Java and C
-          programming languages during my first year at university. During the academy, I learned to develop
-          applications with Flutter and Dart, and I developed my first application during the graduation bootcamp. I
-          am currently continuing to enhance my skills in machine learning.</p>
-
-        <div class="about-section">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <h3>Skills</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">C</li>
-                <li class="list-group-item">Flutter & Dart</li>
-                <li class="list-group-item">Python</li>
-              </ul>
+    <header class="header">
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Beyza Coban</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('about')">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('read')">Read</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showSection('watched')">Watched</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <h3>Projects</h3>
-              <div class="project mb-3">
-                <h4>TeamHub</h4>
-                <p>TeamHub is a Flutter/Dart application that connects project owners and developers, facilitating
-                  collaboration on projects.</p>
-                <a href="https://github.com/beyzacoban/OUA-Bootcamp-39" target="_blank" class="btn btn-primary">View on
-                  GitHub</a>
-              </div>
-              <div class="project">
-                <h4>RoadRush</h4>
-                <p>RoadRush is a traffic simulation game developed using JavaFx.</p>
-                <a href="https://github.com/beyzacoban/RoadRush" target="_blank" class="btn btn-primary">View on
-                  GitHub</a>
-              </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="my-5 text-center section">
+            <div class="home-container">
+                <div class="home-text">
+                    <h1>Welcome to My Portfolio. I'm Beyza Coban.</h1>
+                </div>
+                <div class="home-image">
+                    <img src="assets/website.png" alt="computer and rocket" class="img-fluid">
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <h3>Certifications</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Google Project Management Certificate (Coursera)</li>
-                <li class="list-group-item">Advanced Python with Machine Learning (BTK Academy)</li>
-                <li class="list-group-item">Ideathon (Oyun ve Uygulama Akademisi)</li>
-                <li class="list-group-item">App Jam (Oyun ve Uygulama Akademisi)</li>
-              </ul>
+        </section>
+        
+
+        <section id="about" class="my-5 section hidden">
+            <div class="container about-section">
+                <h2 class="text-center mb-4">About Me</h2>
+                <p class="lead text-center">Hello, I am Beyza Coban. I am currently a second-year student pursuing a
+                    Bachelor's degree in Computer Engineering at Marmara University and a graduate of the Game and
+                    Application Academy. I learned Java and C programming languages during my first year at university.
+                    During the academy, I learned to develop applications with Flutter and Dart, and I developed my
+                    first application during the graduation bootcamp. I am currently continuing to enhance my skills in
+                    machine learning.</p>
+
+                <div class="about-section mt-4">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h3>Skills</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">Java</li>
+                                <li class="list-group-item bg-transparent">C</li>
+                                <li class="list-group-item bg-transparent">Flutter & Dart</li>
+                                <li class="list-group-item bg-transparent">Python</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h3>Projects</h3>
+                            <div class="project mb-3">
+                                <h4>TeamHub</h4>
+                                <p>TeamHub is a Flutter/Dart application that connects project owners and developers,
+                                    facilitating collaboration on projects.</p>
+                                <a href="https://github.com/beyzacoban/OUA-Bootcamp-39" target="_blank"
+                                    class="btn btn-pink">View on GitHub</a>
+                            </div>
+                            <div class="project">
+                                <h4>RoadRush</h4>
+                                <p>RoadRush is a traffic simulation game developed using JavaFx.</p>
+                                <a href="https://github.com/beyzacoban/RoadRush" target="_blank"
+                                    class="btn btn-pink">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h3>Certifications</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">Google Project Management Certificate (Coursera)</li>
+                                <li class="list-group-item bg-transparent">Advanced Python with Machine Learning (BTK Academy)</li>
+                                <li class="list-group-item bg-transparent">Ideathon (Oyun ve Uygulama Akademisi)</li>
+                                <li class="list-group-item bg-transparent">App Jam (Oyun ve Uygulama Akademisi)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <h3>Contact</h3>
+                            <p>Email: <a href="mailto:beyzacoban07@gmail.com">beyzacoban07@gmail.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/beyzacoban/" target="_blank">linkedin.com/in/beyzacoban</a></p>
+                            <p>GitHub: <a href="https://github.com/beyzacoban" target="_blank">github.com/beyzacoban</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <h3>Education</h3>
-              <p><strong>Bachelor's Degree in Computer Engineering</strong><br>Marmara University, Faculty of
-                Engineering, Istanbul, Turkey (2023-2027)</p>
+        </section>
 
-              <h3 class="mt-4">Personal Traits</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Highly Motivated: Eager to learn and continuously improve.</li>
-                <li class="list-group-item">Team Player: Effective collaboration with diverse teams.</li>
-                <li class="list-group-item">Responsible: Committed to delivering tasks with precision.</li>
-                <li class="list-group-item">Analytical Thinking: Innovative problem-solving skills.</li>
-              </ul>
-
-              <h3 class="mt-4">Hobbies</h3>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Hiking</li>
-                <li class="list-group-item">Reading Books</li>
-                <li class="list-group-item">Solving Puzzles</li>
-              </ul>
-
-              <h3 class="mt-4">Contact</h3>
-              <p>Email: <a href="mailto:beyzacoban07@gmail.com">beyzacoban07@gmail.com</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/beyzacoban/"
-                  target="_blank">linkedin.com/in/beyzacoban</a></p>
-              <p>GitHub: <a href="https://github.com/beyzacoban" target="_blank">github.com/beyzacoban</a></p>
+        <section id="read" class="my-5 section hidden " >
+            <h2>Read</h2>
+            <p>Here are some of my favorite books:</p>
+            <ul>
+                <li>"Ince Memed" by Yasar Kemal</li>
+                <li>"1984" by George Orwell</li>
+                <li>"Harry Potter" by J. K. Rowling</li>
+                <li>"The Count of Monte Cristo" by Alexandre Dumas</li>
+                <li>"Origin" by Dan Brown</li>
+                <li>"Oblomov" by İvan Gonçarov</li>
+                <li>"Improbable" by Adam Fawer</li>
+                <li>"Blindness" by Jose Saramago</li>
+                <li>"Mutant Message Down Under" by Marlo Morgan</li>
+                <li>"Crime and Punishment" by Fyodor Dostoevsky</li>
+            </ul>
+            <div class="mt-4 text-center">
+                <a href="https://1000kitap.com/beyzacobann" target="_blank" class="btn btn-pink">View My 1000K</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="read" class="my-5 hidden">
-      <h2>Read</h2>
-      <p>Here are some of my favorite books:</p>
-      <ul>
-        <li>"Ince Memed" by Yasar Kemal</li>
-        <li>"1984" by George Orwell</li>
-        <li>"Harry Potter" by J. K. Rowling</li>
-        <li>"The Count of Monte Cristo" by Alexandre Dumas</li>
-        <li>"Origin" by Dan Brown</li>
-        <li>"Oblomov" by İvan Gonçarov</li>
-        <li>"Improbable " by Adam Fawer</li>
-        <li>"Blindness" by Jose Saramago</li>
-        <li>"Mutant Message Down Under" by Marlo Morgan</li>
-        <li>"Crime and Punishment" by Fyodor Dostoevsky</li>
-      </ul>
-      <div class="mt-4 text-center">
-        <a href="https://1000kitap.com/beyzacobann" target="_blank" class="btn btn-primary">
-          <i class="fas fa-book"></i> View My 1000K
-        </a>
-      </div>
-    </section>
+        <section id="watched" class="my-5 section hidden">
+            <h2>Watched</h2>
+            <p>Here are some of my favorite movies:</p>
+            <ul>
+                <li>Inception</li>
+                <li>The Matrix</li>
+                <li>Interstellar</li>
+                <li>The Shawshank Redemption</li>
+                <li>The Dark Knight</li>
+                <li>Back to the Future</li>
+                <li>Coco</li>
+                <li>Soul</li>
+                <li>John Wick</li>
+                <li>The Lord of the Rings</li>
+            </ul>
+            <div class="mt-4 text-center">
+                <a href="https://letterboxd.com/beyzacoban/" target="_blank" class="btn btn-pink">View My Letterboxd</a>
+            </div>
+        </section>
+    </main>
 
-    <section id="watched" class="my-5 hidden">
-      <h2>Watched</h2>
-      <p>Here are some of my favorite movies:</p>
-      <ul>
-        <li>Inception</li>
-        <li>The Matrix</li>
-        <li>Interstellar</li>
-        <li>The Shawshank Redemption</li>
-        <li>The Dark Knight</li>
-        <li>Back to the Future</li>
-        <li>Coco</li>
-        <li>Soul</li>
-        <li>John Wick</li>
-        <li>The Lord of the Rings</li>
-      </ul>
-      <div class="mt-4 text-center">
-        <a href="https://letterboxd.com/beyzacoban/" target="_blank" class="btn btn-primary">View My Letterboxd</a>
-      </div>
-    </section>
+    <footer class="text-center py-4 text-white">
+        <p>© 2024 Beyza Coban</p>
+    </footer>
 
-  </main>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main > section');
+            sections.forEach(section => section.classList.add('hidden'));
 
-  <footer class="text-center py-4">
-    <p>© 2024 Beyza Coban</p>
-  </footer>
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
 
-  <script>
-    function showSection(sectionId) {
-      document.querySelectorAll('main > section').forEach(section => {
-        section.classList.add('hidden');
-      });
-      document.getElementById(sectionId).classList.remove('hidden');
-    }
-  </script>
+            // Change navbar and body background color based on section
+            const navbar = document.getElementById('navbar');
+            if (sectionId === 'home' || sectionId === 'read') {
+                document.body.style.backgroundColor = '#003c6b';
+                navbar.classList.add('navbar-dark');
+                navbar.classList.remove('navbar-light');
+                navbar.style.backgroundColor = '#003c6b';
+                document.querySelectorAll('.nav-link').forEach(link => link.style.color = '#fff');
+            } else {
+                document.body.style.backgroundColor = '#7ac9fa';
+                navbar.classList.add('navbar-light');
+                navbar.classList.remove('navbar-dark');
+                navbar.style.backgroundColor = '#7ac9fa';
+                document.querySelectorAll('.nav-link').forEach(link => link.style.color = '#000');
+            }
+        }
+
+        // Show the home section by default
+        showSection('home');
+    </script>
 </body>
 
 </html>

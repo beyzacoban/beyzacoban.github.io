@@ -1,105 +1,85 @@
-/* Base styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #4d0016;
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #000;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
   color: #fff;
-  padding: 1.5rem;
-  text-align: center;
-  border-bottom: 3px solid #4d0016;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #e0f2f1;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-h1 {
-  color: #f9f9f9;
-}
-
-h2,
-h3 {
-  color: #4d0016;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #4d0016;
-  color: #fff;
-  border-top: 3px solid #4d0016;
-}
-
-/* Button Styles */
-.btn-primary,
-.btn-success,
-.project a,
-button,
-a.btn {
-  background-color: #4d0016;
-  border-color: #4d0016;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-primary:hover,
-.btn-success:hover,
-.project a:hover,
-button:hover,
-a.btn:hover {
-  background-color: #37000d;
-  border-color: #37000d;
+.section {
+  padding: 50px 0;
 }
 
 .hidden {
   display: none;
 }
 
-#home {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #000;
+.btn-pink {
+  background-color: #f875a6;
+  color: #fff;
 }
 
-.home-gif {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+.btn-pink:hover {
+  background-color: #f875a6;
+  color: #fff;
+}
+
+.text-white {
+  color: #003c6b;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section h3 {
+  border-bottom: 2px solid #f875a6;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#read h2,
+#read p,
+#read ul,
+#read li {
+  color: #fff;
+}
+
+#read {
+  background-color: #003c6b;
+
+
+}
+/* Ensure the container takes full width */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.home-container img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+}
+
+.home-container h1 {
+  color: #fff; /* Ensure text color is white */
 }
