@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, sans-serif;
 }
 
 html {
@@ -9,6 +9,10 @@ html {
 
 .navbar {
   transition: background-color 0.1s ease;
+  background-color: #003c6b;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
 
 .navbar-light .navbar-brand,
@@ -16,13 +20,24 @@ html {
   color: #000;
 }
 
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #f875a6 !important;
+}
+
 .navbar-dark .navbar-brand,
 .navbar-dark .nav-link {
-  color: #fff;
+  color: #fff !important;
+  transition: color 0.2s ease;
 }
 
 .section {
-  padding: 50px 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+  opacity: 1;
 }
 
 .hidden {
@@ -259,4 +274,46 @@ table tr:last-child td:last-child {
   .home-image img {
     height: auto;
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-text h1 {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.home-text p {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.list-group-item i {
+  margin-right: 10px;
+  color: #003c6b;
+}
+
+.skill-icon {
+  width: 50px;
+  margin-right: 50px;
+}
+
+.python {
+  width: 90px;
+}
+
+.java {
+  width: 80px;
 }

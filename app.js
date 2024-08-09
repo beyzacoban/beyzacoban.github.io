@@ -1,9 +1,15 @@
 function showSection(sectionId) {
     const sections = document.querySelectorAll('main > section');
-    sections.forEach(section => section.classList.add('hidden'));
+    sections.forEach(section => {
+        section.classList.remove('active');
+        section.classList.add('hidden');
+    });
 
     const selectedSection = document.getElementById(sectionId);
     selectedSection.classList.remove('hidden');
+    setTimeout(() => {
+        selectedSection.classList.add('active');
+    }, 10);  // Slight delay to trigger the transition
 
     const navbar = document.getElementById('navbar');
     if (sectionId === 'home' || sectionId === 'read') {
@@ -23,4 +29,5 @@ function showSection(sectionId) {
 
 document.addEventListener('DOMContentLoaded', function () {
     showSection('home');
+
 });
