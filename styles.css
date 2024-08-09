@@ -3,6 +3,10 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   transition: background-color 0.1s ease;
 }
@@ -152,7 +156,7 @@ table tr:last-child td:last-child {
 /* Read Section */
 #read {
   background-color: #003c6b;
-  padding: 50px 0 ;
+  padding: 50px 0;
 }
 
 .read-content {
@@ -256,4 +260,3 @@ table tr:last-child td:last-child {
     height: auto;
   }
 }
-
