@@ -56,7 +56,7 @@ html {
   background-color: #f875a6 !important;
   color: #fff !important;
   border: none !important;
-  
+
 }
 
 .btn-pink:hover {
@@ -120,7 +120,7 @@ html {
 .watched-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 table {
@@ -129,18 +129,11 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 12px;
-  overflow: hidden;
-}
-
-table,
-th,
-td {
-  border: 1px solid #003c6b;
 }
 
 th,
 td {
-  padding: 8px;
+  padding: 12px 20px;
   text-align: left;
   color: #fff;
 }
@@ -176,7 +169,8 @@ table tr:last-child td:last-child {
 /* Read Section */
 #read {
   background-color: #003c6b;
-  padding: 50px 0;
+  text-align: center;
+  padding: 2px 0;
 }
 
 .read-content {
@@ -208,7 +202,6 @@ table tr:last-child td:last-child {
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 12px;
-  overflow: hidden;
   background-color: #e1f1fb;
 }
 
@@ -317,7 +310,7 @@ table tr:last-child td:last-child {
 }
 
 .python {
-  width: 90px;
+  width: 100px;
 }
 
 .java {
