@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: #e1648f;
+}
+
 .navbar {
   transition: background-color 0.1s ease;
   background-color: #003c6b;
@@ -52,10 +56,11 @@ html {
   background-color: #f875a6 !important;
   color: #fff !important;
   border: none !important;
+  
 }
 
 .btn-pink:hover {
-  background-color: #e1648f !important;
+  background-color: #004b8d !important;
   color: #fff !important;
 }
 
@@ -275,6 +280,7 @@ table tr:last-child td:last-child {
     height: auto;
   }
 }
+
 
 @keyframes fadeInUp {
   from {
