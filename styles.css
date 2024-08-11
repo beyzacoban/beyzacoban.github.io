@@ -8,7 +8,7 @@ html {
 }
 
 ::selection {
-  background: #e1648f;
+  background: #efa9c3;
 }
 
 .navbar {
@@ -170,7 +170,8 @@ table tr:last-child td:last-child {
 #read {
   background-color: #003c6b;
   text-align: center;
-  padding: 2px 0;
+  padding: 12px 10px;
+  
 }
 
 .read-content {
@@ -193,7 +194,7 @@ table tr:last-child td:last-child {
 .read-image img {
   max-width: 50%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .styled-table-read {
