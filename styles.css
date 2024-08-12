@@ -35,7 +35,7 @@ body {
 .section {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  
+
 }
 
 .section.active {
@@ -309,7 +309,7 @@ table tr:last-child td:last-child {
 }
 
 .skill-icon {
-  width: 50px;
+  width: 40px;
   margin-right: 50px;
 }
 
@@ -321,10 +321,21 @@ table tr:last-child td:last-child {
 .java {
   width: 80px;
 }
+
 a.link {
-  color: #f875a6; 
+  color: #f875a6;
 }
 
 a.link:hover {
-  color: #003c6b; 
+  color: #003c6b;
+}
+
+.list-group-item {
+  border: none;
+  border-top: 1px solid #f875a6 !important;
+  padding: 10px 0;
+}
+
+.list-group-item:first-child {
+  border-top: none !important;
 }
